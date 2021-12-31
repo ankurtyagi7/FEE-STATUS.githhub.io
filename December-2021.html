@@ -1,0 +1,244 @@
+  <!DOCTYPE html> 
+  <html> 
+  <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style> 
+  
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 120vh;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50     74%);
+}
+      
+      
+      
+      
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+    color: aliceblue;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+     font-size: .95em;
+    
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+    background-color: #f8fd76;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+      color: aliceblue;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+      
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .9em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+.footer {
+  position:fixed;
+  bottom:5px;
+}
+
+.footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size:12px;
+  color:gray;
+}
+
+.footer a {
+  color: #fff;
+  transition: all .4s;
+}
+
+.footer a:hover {
+  color: #eaeaeb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* general styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+      
+      
+      </style> 
+      </head> 
+      <body> 
+         <table>
+  <caption>FEE  STATUS/ DEC-2021</caption>
+  <thead>
+    <tr>
+      <th scope="col">DATE</th>
+      <th scope="col">STUDENT NAME</th>
+      <th scope="col">FATHER NAME</th>
+      <th scope="col">TRADE/CPI</th>
+         <th scope="col">SESSION</th>
+      <th scope="col">FEE/EXAM FEE</th>
+      <th scope="col">AMOUNT</th>
+        <th scope="col">RECEIPT NO</th>
+      <th scope="col">REMARK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="DATE">20/12/21</td>
+      <td data-label="STUDENT NAME">MANOJ KUMAR</td>
+      <td data-label="FATHER NAME">SANDEEP</td>
+      <td data-label="TRADE/CPI">19/F/14</td>
+        <td data-label="SESSION">2019-21 IInd YEAR</td>
+      <td data-label="FEE/EXAM FEE">CBT/Practical Fee</td>
+      <td data-label="AMOUNT">500/-/300/-</td>
+        <td data-label="RECEIPT NO"> - </td>
+      <td data-label="REMARK">-</td>
+      
+        
+        
+    </tr>
+   <tr>
+      <td data-label="DATE">28/12/21</td>
+      <td data-label="STUDENT NAME">KAPIL</td>
+      <td data-label="FATHER NAME">SAHENDRA PAL</td>
+      <td data-label="TRADE/CPI">19/E/26</td>
+        <td data-label="SESSION">2019-21 IInd YEAR</td>
+      <td data-label="FEE/EXAM FEE">FEE</td>
+      <td data-label="AMOUNT">3000/-</td>
+        <td data-label="RECEIPT NO"> 709 </td>
+      <td data-label="REMARK">-</td>
+      
+        
+        
+    </tr>
+   <tr>
+      <td data-label="DATE">28/12/21</td>
+      <td data-label="STUDENT NAME">PARAMJIT</td>
+      <td data-label="FATHER NAME">MAHKAR</td>
+      <td data-label="TRADE/CPI">19/F/32</td>
+        <td data-label="SESSION">2019-21 IInd YEAR</td>
+      <td data-label="FEE/EXAM FEE">FEE</td>
+      <td data-label="AMOUNT">4000/-</td>
+        <td data-label="RECEIPT NO"> 710 </td>
+      <td data-label="REMARK">-</td>
+      
+        
+        
+    </tr>
+    <tr>
+      <td data-label="DATE">31/12/21</td>
+      <td data-label="STUDENT NAME">HASEEN ALI</td>
+      <td data-label="FATHER NAME">MOPHIK ALI</td>
+      <td data-label="TRADE/CPI">21/E/</td>
+        <td data-label="SESSION">2021-23 Ist YEAR</td>
+      <td data-label="FEE">FEE</td>
+      <td data-label="AMOUNT">2500/-</td>
+        <td data-label="RECEIPT NO"> 711 </td>
+      <td data-label="REMARK">NEW ADMISSION</td>
+      
+        
+        
+    </tr>
+      
+       <tr>
+      <td data-label="DATE">31/12/21</td>
+      <td data-label="STUDENT NAME">AMJAD ALI</td>
+      <td data-label="FATHER NAME">AKRAM</td>
+      <td data-label="TRADE/CPI">21/E/</td>
+        <td data-label="SESSION">2021-23 Ist YEAR</td>
+      <td data-label="FEE">FEE</td>
+      <td data-label="AMOUNT">2500/-</td>
+        <td data-label="RECEIPT NO"> 712 </td>
+      <td data-label="REMARK">NEW ADMISSION</td>
+      
+        
+        
+    </tr>
+  </tbody>
+</table>
+          
+        <div class="footer">
+  <p>design by <a rel="dofollow" target="_blank">Ankur Tyagi</a></p>
+</div>    
+         
+      </body> 
+</html> 
